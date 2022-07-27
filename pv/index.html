@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html class="js-focus-visible" data-js-focus-visible="">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUCRE COM VÍDEOS</title>
+    <link rel="stylesheet" href="./assets/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/style2.css">
+    <!-- Google Tag Manager parte 1 -->
+    <!-- Google Tag Manager -->
+    <script>        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({ 'gtm.start':
+new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KD5Z72V');</script>
+    <!-- End Google Tag Manager -->
+    <!-- End Google Tag Manager parte 1-->
+    <script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function() {
+/* ALTERE O VALOR 10 PARA OS SEGUNDOS EM QUE AS SEÇÕES VÃO APARECER */
+var SECONDS_TO_DISPLAY = 689;
+var CLASS_TO_DISPLAY = ".esconder";
+
+/* DAQUI PARA BAIXO NAO PRECISA ALTERAR */
+var attempts = 0;
+var elsHiddenList = [];
+var elsDisplayed = false;
+var elsHidden = document.querySelectorAll(CLASS_TO_DISPLAY);
+var alreadyDisplayedKey =`alreadyElsDisplayed${SECONDS_TO_DISPLAY}`
+var alreadyElsDisplayed = localStorage.getItem(alreadyDisplayedKey);
+
+setTimeout(function () { elsHiddenList = Array.prototype.slice.call(elsHidden); }, 0);
+
+var showHiddenElements = function () {
+elsDisplayed = true;
+elsHiddenList.forEach((e) => e.style.display = "block");
+localStorage.setItem(alreadyDisplayedKey, true)
+}
+
+var startWatchVideoProgress = function () {
+if (typeof smartplayer === 'undefined' || !(smartplayer.instances && smartplayer.instances.length)) {
+if (attempts >= 10) return;
+attempts += 1;
+return setTimeout(function () { startWatchVideoProgress() }, 1000);
+}
+
+smartplayer.instances[0].on('timeupdate', () => {
+if (elsDisplayed || smartplayer.instances[0].smartAutoPlay) return;
+if (smartplayer.instances[0].video.currentTime < SECONDS_TO_DISPLAY) return;
+showHiddenElements();
+})
+}
+
+if (alreadyElsDisplayed === 'true') {
+setTimeout(function () { showHiddenElements(); }, 100);
+} else {
+startWatchVideoProgress()
+}
+});
+</script>
+</head>
+<body class="vsc-initialized">
+    <!-- Google Tag Manager (noscript) parte 2 -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KD5Z72V" height="0"
+            width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- End Google Tag Manager (noscript) parte 2 -->
+    <div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed;
+        top: 0px; left: 0px; overflow: hidden; height: 0px; width: 1903px;">
+        <img class="parallax-slider" src="./assets/bg-top.png" style="position: absolute;
+            height: 1269px; width: 1903px; max-width: none;">
+    </div>
+    <div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed;
+        top: 0px; left: 0px; overflow: hidden; transform: translate3d(0px, -844px, 0px);
+        height: 880px; width: 1903px;">
+        <img class="parallax-slider" src="./assets/bg1.jpg" style="transform: translate3d(0px, 481.2px, 0px);
+            position: absolute; height: 1268px; width: 1903px; max-width: none;">
+    </div>
+    <section id="navbar">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          Você e algumas pessoas perto de <b class="yellow"><span id="locationJS">X</span></b> querem saber como ganhar dinheiro assistindo vídeos
+      </div>
+    </div>
+  </section>
+    <section class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <img src="./assets/ultrasecreto2.svg" class="ultrasecreto">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          
+         <div id="vid_62a63a38caabfa000a1afab7" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_62a63a38caabfa000a1afab7" src="https://images.converteai.net/a6c87987-c74a-47fd-acd3-478a3eca16c1/players/62a63a38caabfa000a1afab7/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_62a63a38caabfa000a1afab7" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_62a63a38caabfa000a1afab7">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         var s = document.createElement("script"); s.src = "https://scripts.converteai.net/a6c87987-c74a-47fd-acd3-478a3eca16c1/players/62a63a38caabfa000a1afab7/player.js", s.async = !0, document.head.appendChild(s);</script>
+           
+           </div></div>
+           <div class="row">
+        <div class="col">
+          <div class="som text-dark"> <img src="./assets/audio.svg"> Garanta que seu som está ativo!
+          </div>
+        </div>
+      </div>
+      <div class="row esconder">
+        <div class="col">
+          <div class="som text-dark" style="margin-top: 20px;">
+            <a href="https://checkout.mycheckout.com.br/checkout/62d6b133a3feda593276ec47" class="btnP elementor-button-link elementor-button elementor-size-sm" role="button" style="padding: 15px;font-family: 'Roboto', Sans-serif;font-size: 26px;font-weight: 500;fill: #000000;color: #000000;background-color: #FFCE00;border-style: solid;border-width: 0px 0px 5px 0px;border-color: #B87401; border-radius: 7px 7px 7px 7px;">
+              <span class="elementor-button-content-wrapper">
+              <span class="elementor-button-text">QUERO COMEÇAR A LUCRAR</span>
+              </span>
+            </a>
+          </div>
+          <div class="text-dark" style="margin-top: 20px;">
+            	<img width="300" height="300" src="./assets/7-300x300-1.png" class="attachment-large size-large" alt="" loading="lazy" srcset="./assets/7-300x300-1.png 300w, ./assets/7-300x300-1.png 150w" sizes="(max-width: 300px) 100vw, 300px">
+          </div>
+          <div class="som text-dark" style="margin-top: 20px;">
+            <p class="p1" style="text-align: center;font-size: 22px;font-weight: 700;font-family:'Montserrat', Sans-serif;"><span style="color: #ffcc00;">OU VOCÊ TEM RESULTADO, OU EU DEVOLVO TODO SEU <span style="color: #000000;">DINHEIRO</span></span></p>			
+          </div>
+          	<hr style="margin-bottom: 2%;width: 100%;    text-align: center;">
+          <div class="som text-dark" style="margin-top: 20px;">
+            	<p class="p1" style="text-align: center;color: #000000;font-family: 'Montserrat', Sans-serif;font-size: 22px;font-weight: 700;">Nosso compromisso é com você. Estamos focados em te ajudar a ter resultados. Se por qualquer motivo o produto não te agradar, devolvemos todo o seu dinheiro.</p><p class="p1" style="text-align: center;color: #000000;font-family: 'Montserrat', Sans-serif;font-size: 22px;font-weight: 700;">Ficou mais fácil tomar uma decisão agora não é mesmo?</p>	
+          </div>
+          <div class="som text-dark" style="margin-top: 20px;">
+            <a href="https://checkout.mycheckout.com.br/checkout/62d6b133a3feda593276ec47" class="btnP elementor-button-link elementor-button elementor-size-sm" role="button" style="padding: 15px;font-family: 'Roboto', Sans-serif;font-size: 26px;font-weight: 500;fill: #000000;color: #000000;background-color: #FFCE00;border-style: solid;border-width: 0px 0px 5px 0px;border-color: #B87401; border-radius: 7px 7px 7px 7px;">
+              <span class="elementor-button-content-wrapper">
+              <span class="elementor-button-text">QUERO COMEÇAR A LUCRAR</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <footer>
+    <div class="container container-termos" style="text-align: center;">
+          <div>
+            <p class="text-perso">Copyright 2020 ® <br>
+              Todos os direitos reservados.
+            </p>
+            <p>
+              ESTE SITE NÃO É DO GOOGLE: Este site não faz parte do site do Google. Além disso, este site não é endossado pelo Google de nenhuma maneira. GOOGLE é uma marca comercial independente da GOOGLE. Nós NÃO compartilharemos seu endereço de e-mail com ninguém. Você pode cancelar sua inscrição a qualquer momento. Ao se cadastrar você está concordando com a nossa política de privacidade.
+            </p>
+          </div>  
+          <div class="termos">
+            <a href="../termos-de-uso.html">Termos de Uso</a> | 
+            <a href="../politica-de-privacidade.html">Política de Privacidade</a> | 
+            <a href="../contato.html">Contato</a> | 
+            <a href="../reembolso.html">Política de Reembolso</a>
+          </div>
+        </p>
+      </div>
+  </footer>
+    <script src="https://ssl.geoplugin.net/javascript.gp?k=292af9fb00c1353d" type="text/javascript"></script>
+    <script type="text/javascript">
+        document.getElementById("locationJS").innerHTML = geoplugin_city();
+  </script>
